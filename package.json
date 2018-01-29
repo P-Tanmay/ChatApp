@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
+  "name": "pwd",
+=======
   "name": "ChatApp",
+>>>>>>> b05a475f7e8d6fafd110498932ce6ae4c46dc8a8
   "version": "1.0.0",
   "description": "chat application for standalone and video project",
   "main": "app.js",
@@ -20,5 +24,14 @@
   "dependencies": {
     "express": "^4.16.2",
     "grunt": "^1.0.1"
+<<<<<<< HEAD
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "nodemon": "^1.14.11"
+=======
+>>>>>>> b05a475f7e8d6fafd110498932ce6ae4c46dc8a8
   }
 }
