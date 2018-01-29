@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+<<<<<<< HEAD
 const io = require('socket.io')();
 
 app.use(express.static('public'));
@@ -44,4 +45,26 @@ io.on('connection', (socket) => {
     console.log('a user has disconnect!');
   });
 
+=======
+
+// this is a route, this point at the firast homepage / root
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
+
+
+// set up a contact routes
+app.get('/contact', (req, res) => {
+  res.sendFile(__dirname + '/contact.html');
+});
+
+// set up aportfolio routes
+app.get('/portfolio', (req, res) => {
+  res.sendFile(__dirname + '/portfolio.html');
+});
+
+
+app.listen(3000, () => {
+  console.log('app running on port 3000!');
+>>>>>>> b05a475f7e8d6fafd110498932ce6ae4c46dc8a8
 });
